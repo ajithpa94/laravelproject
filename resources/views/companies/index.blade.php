@@ -41,9 +41,12 @@
                  <th>Company image</th>
                  <th width="280px">Action</th>
              </tr>
+             @php
+             $cnt = 1;
+         @endphp
              @foreach($companies as $company)
              <tr>
-                 <td>{{ $company->id }}</td>
+                 <td>{{ $cnt++ }}</td>
                  <td>{{ $company->name }}</td>
                  <td>{{ $company->email }}</td>
                  <td>{{ $company->password }}</td>
